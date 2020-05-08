@@ -63,7 +63,7 @@ drugs<-subset(drugs, duplicate==FALSE)
 #There was only one country with negative net income, and it was removed
 
 #I now have 36 drugs left in the sample:
-drugs.1<-as.data.frame(read_xlsx("C:/Users/17082/Downloads/Drug Database 1.xlsx", sheet=2))
+drugs.1<-as.data.frame(read_xlsx("Cleaned Data/Drug Database 1.xlsx", sheet=1))
 
 #using the clinical trial database, I assign 1 to drugs
 #that have clinical testing the showed an improvement
@@ -74,7 +74,7 @@ drugs.1<-as.data.frame(read_xlsx("C:/Users/17082/Downloads/Drug Database 1.xlsx"
 #criteria for inclusion in the analysis (elective pricing
 # and a clear relationship between dollars and lives)
 
-drugs.2<-as.data.frame(read_xlsx("C:/Users/17082/Downloads/Drug Database 1.xlsx", sheet=3))
+drugs.2<-as.data.frame(read_xlsx("Cleaned Data/Drug Database 1.xlsx", sheet=2))
 view(drugs.2)
 
 
