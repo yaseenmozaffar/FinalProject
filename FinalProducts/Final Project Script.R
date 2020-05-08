@@ -8,7 +8,7 @@ library(tm)
 #PART 1: DATA CLEANING
 
 #reads in the dataset
-drugs<- as.data.frame(read_xlsx("C:/Users/17082/Downloads/Drug WAC Database.xlsx"))
+drugs<- as.data.frame(read_xlsx("Sources/Drug WAC Database.xlsx"))
 view(drugs)
 #removes unnecessary columns and NAs
 drugs<-(drugs[,-c(11:26)])
